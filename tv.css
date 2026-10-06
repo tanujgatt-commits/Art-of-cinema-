@@ -1,0 +1,156 @@
+/* =================================
+   TV SHOWS VS MOVIES PAGE
+   ================================= */
+
+.tv-intro {
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.tv-intro h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.tv-intro p {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+/* TV VS MOVIE CARDS */
+
+.tv-comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 35px 0 50px;
+}
+
+.tv-card {
+    background-color: white;
+    width: 45%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ccc;
+}
+
+.tv-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tv-card h2 {
+    text-align: center;
+    font-size: 27px;
+}
+
+.tv-card h3 {
+    margin-bottom: 5px;
+}
+
+.tv-card ul {
+    padding-left: 25px;
+}
+
+.highlight {
+    background-color: #eeeeee;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+
+/* VS */
+
+.vs-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vs-box span {
+    background-color: #222;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* TABLE */
+
+.tv-table {
+    background-color: white;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ccc;
+    overflow-x: auto;
+}
+
+.tv-table h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* CONCLUSION */
+
+.tv-conclusion {
+    background-color: white;
+    padding: 35px;
+    margin: 40px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ccc;
+    text-align: center;
+}
+
+.final-message {
+    background-color: #eeeeee;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.final-message h3 {
+    margin-top: 25px;
+}
+
+
+/* HOVER EFFECT */
+
+.tv-card {
+    transition: transform 0.3s;
+}
+
+.tv-card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    .tv-comparison {
+        flex-direction: column;
+    }
+
+    .tv-card {
+        width: 100%;
+    }
+
+    .vs-box {
+        margin: 5px 0;
+    }
+
+}
