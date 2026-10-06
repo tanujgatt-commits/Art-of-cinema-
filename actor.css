@@ -1,0 +1,271 @@
+/* =========================================
+   GREAT ACTORS & ACTRESSES PAGE
+   ========================================= */
+
+.actors-header {
+    background: red;
+}
+
+
+/* HERO */
+
+.actors-hero {
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 10%;
+
+    color: black;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url("images/actors-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.actors-hero div {
+    max-width: 700px;
+}
+
+.actors-hero span {
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+
+.actors-hero h2 {
+    font-size: 65px;
+    line-height: 1;
+    margin: 20px 0;
+    letter-spacing: 5px;
+}
+
+.actors-hero p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+
+/* INTRO */
+
+.actors-intro {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.actors-intro h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+
+/* INDUSTRY */
+
+.industry {
+    max-width: 1100px;
+    margin: 75px auto;
+    padding: 0 20px;
+}
+
+.industry-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    border-bottom: 2px solid #222;
+    margin-bottom: 30px;
+}
+
+.industry-title span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.industry-title h2 {
+    font-size: 32px;
+}
+
+
+/* PEOPLE GRID */
+
+.people-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* PERSON CARD */
+
+.person-card {
+    display: flex;
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px #ccc;
+
+    transition: 0.3s;
+}
+
+.person-card:hover {
+    transform: translateY(-6px);
+}
+
+.person-card img {
+    width: 180px;
+    height: 250px;
+
+    object-fit: cover;
+}
+
+.person-card div {
+    padding: 25px;
+}
+
+.person-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.role {
+    font-style: italic;
+    color: #777;
+}
+
+.person-card strong {
+    display: block;
+    margin-top: 15px;
+}
+
+
+/* GLOBAL CINEMA */
+
+.international {
+    max-width: 1100px;
+
+    margin: 100px auto;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background: #eeeeee;
+}
+
+.international h2 {
+    font-size: 42px;
+    margin: 15px 0 40px;
+}
+
+.global-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.global-grid div {
+    background: white;
+
+    padding: 25px 15px;
+
+    border-radius: 8px;
+
+    min-height: 170px;
+}
+
+.global-grid h3 {
+    font-size: 18px;
+}
+
+
+/* ENDING */
+
+.actors-ending {
+    text-align: center;
+
+    background: #111;
+
+    color: white;
+
+    padding: 80px 20px;
+
+    margin-top: 80px;
+}
+
+.actors-ending p:first-child {
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.actors-ending h2 {
+    font-size: 70px;
+    margin: 15px 0;
+}
+
+.actors-ending p:last-child {
+    max-width: 650px;
+    margin: auto;
+    font-size: 17px;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 800px) {
+
+    .actors-hero {
+        padding: 50px 25px;
+    }
+
+    .actors-hero h2 {
+        font-size: 45px;
+    }
+
+    .people-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .person-card img {
+        width: 140px;
+        height: 220px;
+    }
+
+    .global-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .actors-ending h2 {
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .person-card {
+        flex-direction: column;
+    }
+
+    .person-card img {
+        width: 100%;
+        height: 280px;
+    }
+
+    .global-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

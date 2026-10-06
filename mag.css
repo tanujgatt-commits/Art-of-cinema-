@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f4ef;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #171426, #25264a);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    color: #e7c86e;
+    font-size: 34px;
+}
+
+header p {
+    color: #d0ced0;
+    font-style: italic;
+}
+
+
+/* MAIN */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px;
+}
+
+
+/* INTRO */
+
+.intro {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #d2ad45;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    margin-top: 0;
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+    text-align: center;
+    margin: 30px 0 20px;
+    color: #24213d;
+}
+
+
+/* FILM CONTAINER */
+
+.film-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+
+/* FILM CARD */
+
+.film-card {
+    background: white;
+    padding: 18px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.film-card:hover {
+    transform: translateY(-5px);
+}
+
+.film-card h3 {
+    margin-top: 0;
+    color: #777;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.film-card h2 {
+    color: #292746;
+    font-size: 20px;
+}
+
+.film-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* CLOSING */
+
+.closing {
+    background: #20203b;
+    color: white;
+    padding: 25px;
+    margin-top: 35px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.closing h2 {
+    color: #e7c86e;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 30px;
+    background: #171426;
+    color: #ccc;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+
+    .film-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .film-container {
+        grid-template-columns: 1fr;
+    }
+
+}

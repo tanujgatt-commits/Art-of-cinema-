@@ -1,0 +1,253 @@
+/* =====================================
+   LANGUAGE OF LENSES PAGE
+   ===================================== */
+
+.lens-header {
+    background: #0b0b0b;
+}
+
+
+/* HERO */
+
+.lens-hero {
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 10%;
+
+    color: white;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+        url("images/lens-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.lens-hero div {
+    max-width: 700px;
+}
+
+.lens-hero span {
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+
+.lens-hero h2 {
+    font-size: 65px;
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.lens-hero p {
+    font-size: 19px;
+    max-width: 550px;
+}
+
+
+/* INTRO */
+
+.lens-intro {
+    max-width: 850px;
+    margin: 80px auto 60px;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.lens-intro h2 {
+    font-size: 38px;
+    margin: 15px 0 25px;
+}
+
+
+/* LENS GALLERY */
+
+.lens-gallery {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* CARDS */
+
+.lens-card {
+    display: flex;
+
+    background: white;
+
+    margin: 30px 0;
+
+    min-height: 300px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px #ccc;
+
+    transition: 0.3s;
+}
+
+.lens-card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* IMAGE */
+
+.lens-image {
+    width: 45%;
+}
+
+.lens-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* INFORMATION */
+
+.lens-info {
+    width: 55%;
+    padding: 35px;
+}
+
+.lens-number {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.lens-info h3 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.lens-size {
+    font-style: italic;
+    color: #777;
+}
+
+.lens-info strong {
+    display: block;
+    margin-top: 20px;
+}
+
+
+/* DIRECTOR CHOICE */
+
+.director-choice {
+    max-width: 1100px;
+
+    margin: 100px auto;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background: #eeeeee;
+}
+
+.director-choice h2 {
+    font-size: 45px;
+    margin: 20px 0 45px;
+}
+
+.choice-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.choice-grid div {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+}
+
+.choice-grid h3 {
+    font-size: 22px;
+}
+
+
+/* ENDING */
+
+.lens-ending {
+    background: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 90px 20px;
+
+    margin-top: 80px;
+}
+
+.lens-ending h2 {
+    font-size: 50px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.lens-ending p {
+    font-size: 18px;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    .lens-hero {
+        min-height: 400px;
+        padding: 40px 25px;
+    }
+
+    .lens-hero h2 {
+        font-size: 43px;
+    }
+
+    .lens-card {
+        flex-direction: column;
+    }
+
+    .lens-image,
+    .lens-info {
+        width: 100%;
+    }
+
+    .lens-image {
+        height: 300px;
+    }
+
+    .choice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .director-choice h2 {
+        font-size: 34px;
+    }
+
+    .lens-ending h2 {
+        font-size: 38px;
+    }
+
+}
