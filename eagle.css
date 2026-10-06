@@ -1,0 +1,144 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:blue;
+    color: white;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    background-color:green;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+
+nav {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 18px;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+
+/* Main */
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+
+/* Review Box */
+
+.review-box {
+    background-color:maroon;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+/* Heading */
+
+.review-box h2 {
+    text-align: center;
+    color: #e50914;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+/* Input, Select and Textarea */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/* Textarea */
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+
+/* Button */
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+
+    background-color: #e50914;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b20710;
+}
+
+
+/* Message */
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #000;
+    padding: 20px;
+}
+```

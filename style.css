@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:lightred;
+}
+
+/* Header */
+h2 {
+    color:blue;
+    text-align: center;
+    padding: 7px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:black;
+    padding: 8px;
+}
+
+.navbar a {
+    color:red;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;s
+    background-color:black;
+    border-radius: 5px;
+    align-items: center;
+    display:flex;
+    min height: 20px
+}
+
+.navbar a:hover {
+    background-color:green;
+}
+
+/* Content */
+.content {
+    padding: 12px;
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+    background-color:red;
+    color: white;
+    width: 100%;
+}
+
+

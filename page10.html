@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Movie Reviews - Art of Cinema</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="eagle.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+  <h1>EAGLEBOXD WELCOMES YOU</h1><br><br>
+
+        <h1>Login & Share Your Movie Review</h1>
+
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+<a href="index.html" style="
+        color:red;
+        text-decoration:none;
+        padding:10px 15px;
+        margin:5px;
+        background-color:black;
+        border-radius:5px;
+        display:flex;
+        align-items:center;
+        min-height:20px;
+    ">Home</a>
+
+        </nav>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <div class="review-box">
+
+            <h2>Movie Review</h2>
+
+            <p>
+                Login and share your thoughts about your favourite movies.
+            </p>
+
+
+            <!-- Login Details -->
+
+            <label>Name:</label>
+
+            <input type="text" id="name"
+                   placeholder="Enter your name">
+
+
+            <label>Email:</label>
+
+            <input type="email" id="email"
+                   placeholder="Enter your email">
+
+
+            <!-- Movie Selection -->
+
+            <label>Select Movie:</label>
+
+            <select id="movie">
+
+                <option value="">-- Select a Movie --</option>
+
+                <option>Businessman</option>
+
+                <option>Inglourious Basterds</option>
+
+                <option>Heat</option>
+
+                <option>The Silence of the Lambs</option>
+ <option>Fisful of Dollars</option>
+ <option>The Good The Bad The Ugly</option>
+ <option>Finding Nemo</option>
+
+ <option>Pokiri</option>
+ <option>Panjaa</option>
+ <option>Inside Out</option>
+
+
+            </select>
+
+
+            <!-- Rating -->
+
+            <label>Rating:</label>
+
+            <select id="rating">
+
+                <option value="">-- Select Rating --</option>
+
+                <option>★★★★★ - Excellent</option>
+
+                <option>★★★★☆ - Very Good</option>
+
+                <option>★★★☆☆ - Good</option>
+
+                <option>★★☆☆☆ - Average</option>
+
+                <option>★☆☆☆☆ - Poor</option>
+
+            </select>
+
+
+            <!-- Review -->
+
+            <label>Your Review:</label>
+
+            <textarea id="review"
+                      placeholder="Write your movie review here...">
+            </textarea>
+
+
+            <!-- Submit Button -->
+
+            <button onclick="submitReview()">
+                Submit Review
+            </button>
+
+
+            <!-- JavaScript Message -->
+
+            <p id="message"></p>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Art of Cinema | Movie Review Page
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function submitReview()
+        {
+
+            var name = document.getElementById("name").value;
+
+            var email = document.getElementById("email").value;
+
+            var movie = document.getElementById("movie").value;
+
+            var rating = document.getElementById("rating").value;
+
+            var review = document.getElementById("review").value;
+
+            var message = document.getElementById("message");
+
+
+            /* Checking empty fields */
+
+            if (name == "" ||
+                email == "" ||
+                movie == "" ||
+                rating == "" ||
+                review.trim() == "")
+            {
+
+                message.innerHTML =
+                "Please fill in all the details.";
+
+                message.style.color = "red";
+
+                return;
+
+            }
+
+
+            /* Successful submission */
+
+            message.innerHTML =
+            "Thank you, " + name +
+            "! Your review for " + movie +
+            " has been submitted.";
+
+            message.style.color = "green";
+
+
+            /* Clear the form */
+
+            document.getElementById("name").value = "";
+
+            document.getElementById("email").value = "";
+
+            document.getElementById("movie").value = "";
+
+            document.getElementById("rating").value = "";
+
+            document.getElementById("review").value = "";
+
+        }
+
+    </script>
+
+</body>
+</html>
+
