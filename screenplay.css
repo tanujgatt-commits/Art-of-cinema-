@@ -1,0 +1,350 @@
+
+/* =========================================
+   THE UNDERRATED ROLE OF SCREENPLAY
+   ========================================= */
+
+.screenplay-header {
+    background: blue;
+}
+
+
+/* HERO */
+
+.screenplay-hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 10%;
+
+    color: yellow;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.80)),
+        url("images/screenplay-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.screenplay-hero-content {
+    max-width: 700px;
+}
+
+.screenplay-hero span {
+    font-size: 12px;
+    letter-spacing: 6px;
+}
+
+.screenplay-hero h2 {
+    font-size: 65px;
+    line-height: 0.95;
+    letter-spacing: 4px;
+    margin: 25px 0;
+}
+
+.screenplay-hero p {
+    font-size: 19px;
+    max-width: 600px;
+}
+
+
+/* INTRO */
+
+.screenplay-intro {
+    max-width: 850px;
+
+    margin: 80px auto;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.screenplay-intro h2 {
+    font-size: 40px;
+    margin: 15px 0 25px;
+}
+
+
+/* SCREENPLAY CARDS */
+
+.screenplay-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.screenplay-card {
+    min-height: 280px;
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    transition: 0.3s;
+}
+
+.screenplay-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 8px 20px #ccc;
+}
+
+.screenplay-card > span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.screenplay-card h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.mini-example {
+    margin-top: 25px;
+
+    padding: 12px;
+
+    background: #eeeeee;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* SCRIPT TO SCREEN */
+
+.script-to-screen {
+    max-width: 1100px;
+
+    margin: 100px auto;
+
+    padding: 50px 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 80px 1fr;
+
+    align-items: center;
+
+    background: #eeeeee;
+}
+
+.script-side,
+.film-side {
+    padding: 20px;
+}
+
+.script-side h2,
+.film-side h2 {
+    font-size: 35px;
+}
+
+.script-side p,
+.film-side p {
+    padding: 10px 0;
+
+    border-bottom: 1px solid #ccc;
+}
+
+.arrow {
+    text-align: center;
+
+    font-size: 45px;
+
+    font-weight: bold;
+}
+
+
+/* UNDERRATED */
+
+.underrated {
+    background: #111;
+
+    color: white;
+
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+.underrated h2 {
+    font-size: 50px;
+
+    line-height: 1.1;
+
+    margin: 20px 0 55px;
+}
+
+.reasons {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.reasons div {
+    text-align: left;
+
+    padding: 30px;
+
+    border: 1px solid #555;
+}
+
+.reasons strong {
+    font-size: 30px;
+}
+
+.reasons h3 {
+    font-size: 23px;
+}
+
+
+/* EXAMPLES */
+
+.examples {
+    max-width: 1000px;
+
+    margin: 100px auto;
+
+    padding: 20px;
+}
+
+.examples h2 {
+    font-size: 40px;
+
+    margin: 15px 0 45px;
+}
+
+.example {
+    display: flex;
+
+    gap: 30px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #ccc;
+}
+
+.example > span {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.example h3 {
+    margin: 0 0 8px;
+
+    font-size: 24px;
+}
+
+
+/* ENDING */
+
+.screenplay-ending {
+    text-align: center;
+
+    background: #eeeeee;
+
+    padding: 100px 20px;
+}
+
+.screenplay-ending > span {
+    letter-spacing: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.screenplay-ending h2 {
+    font-size: 55px;
+
+    line-height: 1.05;
+
+    margin: 20px 0;
+}
+
+.screenplay-ending p {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 18px;
+}
+
+.final-line {
+    margin-top: 40px;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 800px) {
+
+    .screenplay-hero {
+        min-height: 500px;
+
+        padding: 50px 25px;
+    }
+
+    .screenplay-hero h2 {
+        font-size: 45px;
+    }
+
+    .screenplay-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .script-to-screen {
+        grid-template-columns: 1fr;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+
+        margin: 20px;
+    }
+
+    .reasons {
+        grid-template-columns: 1fr;
+    }
+
+    .underrated h2 {
+        font-size: 38px;
+    }
+
+    .screenplay-ending h2 {
+        font-size: 40px;
+    }
+
+}
+```

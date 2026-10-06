@@ -1,0 +1,124 @@
+
+ /* =================================
+   PHYSICAL VS DIGITAL MEDIA
+   ================================= */
+
+.content-box {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    background-color: white;
+    margin: 35px 0;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ccc;
+}
+
+.content-box.reverse {
+    flex-direction: row;
+}
+
+.text {
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 480px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Simple Explanation Box */
+
+.simple {
+    background-color: #eeeeee;
+    padding: 12px 18px;
+    border-left: 5px solid #333;
+    border-radius: 5px;
+}
+
+
+/* Comparison Table */
+
+.comparison {
+    background-color: white;
+    padding: 35px;
+    margin: 50px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ccc;
+    overflow-x: auto;
+}
+
+.comparison h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.comparison table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison th,
+.comparison td {
+    border: 1px solid #bbb;
+    padding: 15px;
+    text-align: left;
+}
+
+.comparison th {
+    background-color: #222;
+    color: white;
+}
+
+.comparison tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Memory Box */
+
+.memory-box {
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 650px;
+    border-radius: 10px;
+}
+
+.memory-box p {
+    font-size: 18px;
+}
+
+
+/* Mobile View */
+
+@media screen and (max-width: 768px) {
+
+    .content-box,
+    .content-box.reverse {
+        flex-direction: column;
+    }
+
+    .text,
+    .image {
+        width: 100%;
+    }
+
+    .main-image {
+        height: 250px;
+    }
+
+    .comparison {
+        padding: 20px;
+    }
+}            
