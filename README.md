@@ -36,26 +36,20 @@ A cinematic-themed multi-page website built using HTML, CSS, and JavaScript. Thi
 
 
 Art-of-cinema/
-├── index.html
-├── 1page.html
-├── page2.html
-├── page3.html
-├── page4.html
-├── page5.html
-├── page6.html
-├── page7.html
-├── page8.html
-├── page9.html
-├── page10.html
-├── style.css
-├── actor.css
-├── eagle.css
-├── fav.css
-├── lang.css
-├── mag.css
-├── media.css
-├── nav.css
-├── opus.css
+| index.html | 1page.html | page2.html | page3.html | page4.html | page5.html | page6.html | page7.html | page8.html | page9.html | page10.html | style.css | actor.css | eagle.css |
+| fav.css | lang.css | mag.css | media.css | nav.css | opus.css |
+
+
+
+
+
+
+
+
+
+
+
+
 ├── screenplay.css
 ├── style1.css
 ├── tv.css
