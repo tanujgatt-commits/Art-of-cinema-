@@ -1,4 +1,4 @@
- <!-- JavaScript -->
+ <javaScript
 
     <script>
 
@@ -18,7 +18,7 @@
             var message = document.getElementById("message");
 
 
-            /* Checking empty fields */
+            // to Check empty fields 
 
             if (name == "" ||
                 email == "" ||
@@ -37,7 +37,7 @@
             }
 
 
-            /* Successful submission */
+            //submissions
 
             message.innerHTML =
             "Thank you, " + name +
@@ -47,7 +47,7 @@
             message.style.color = "green";
 
 
-            /* Clear the form */
+            
 
             document.getElementById("name").value = "";
 
