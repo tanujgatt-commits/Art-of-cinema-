@@ -8,7 +8,7 @@ body {
 }
 
 
-/* Header */
+//Header 
 
 header {
     text-align: center;
@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 
-/* Main */
+//Main 
 
 main {
     width: 80%;
@@ -53,7 +53,7 @@ main {
 }
 
 
-/* Review Box */
+//Review Box
 
 .review-box {
     background-color:maroon;
@@ -64,7 +64,7 @@ main {
 }
 
 
-/* Heading */
+//Heading
 
 .review-box h2 {
     text-align: center;
@@ -72,7 +72,7 @@ main {
 }
 
 
-/* Labels */
+// Labels 
 
 label {
     display: block;
@@ -81,7 +81,7 @@ label {
 }
 
 
-/* Input, Select and Textarea */
+// Input, Select and Textarea
 
 input,
 select,
@@ -95,15 +95,14 @@ textarea {
 }
 
 
-/* Textarea */
-
+// Textarea 
 textarea {
     height: 120px;
     resize: none;
 }
 
 
-/* Button */
+//Button 
 
 button {
     width: 100%;
@@ -125,7 +124,7 @@ button:hover {
 }
 
 
-/* Message */
+
 
 #message {
     text-align: center;
@@ -134,7 +133,7 @@ button:hover {
 }
 
 
-/* Footer */
+
 
 footer {
     text-align: center;
