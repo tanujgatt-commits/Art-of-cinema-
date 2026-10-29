@@ -1,14 +1,10 @@
 
-/* =========================================
-   THE UNDERRATED ROLE OF SCREENPLAY
-   ========================================= */
 
 .screenplay-header {
     background: blue;
 }
 
-
-/* HERO */
+
 
 .screenplay-hero {
     min-height: 600px;
@@ -50,7 +46,7 @@
 }
 
 
-/* INTRO */
+
 
 .screenplay-intro {
     max-width: 850px;
@@ -74,7 +70,7 @@
 }
 
 
-/* SCREENPLAY CARDS */
+
 
 .screenplay-grid {
     max-width: 1100px;
@@ -131,7 +127,7 @@
 }
 
 
-/* SCRIPT TO SCREEN */
+
 
 .script-to-screen {
     max-width: 1100px;
@@ -175,7 +171,7 @@
 }
 
 
-/* UNDERRATED */
+
 
 .underrated {
     background: #111;
@@ -224,7 +220,7 @@
 }
 
 
-/* EXAMPLES */
+
 
 .examples {
     max-width: 1000px;
@@ -263,7 +259,7 @@
 }
 
 
-/* ENDING */
+
 
 .screenplay-ending {
     text-align: center;
@@ -306,7 +302,7 @@
 }
 
 
-/* MOBILE */
+
 
 @media screen and (max-width: 800px) {
 
