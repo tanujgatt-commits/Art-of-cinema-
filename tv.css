@@ -1,6 +1,4 @@
-/* =================================
-   TV SHOWS VS MOVIES PAGE
-   ================================= */
+
 
 .tv-intro {
     text-align: center;
@@ -18,7 +16,7 @@
 }
 
 
-/* TV VS MOVIE CARDS */
+//TV VS MOVIE CARDS 
 
 .tv-comparison {
     display: flex;
@@ -85,7 +83,7 @@
 }
 
 
-/* TABLE */
+// TABLE 
 
 .tv-table {
     background-color: white;
@@ -102,7 +100,7 @@
 }
 
 
-/* CONCLUSION */
+// CONCLUSION
 
 .tv-conclusion {
     background-color: white;
@@ -126,7 +124,7 @@
 }
 
 
-/* HOVER EFFECT */
+
 
 .tv-card {
     transition: transform 0.3s;
@@ -137,7 +135,7 @@
 }
 
 
-/* MOBILE */
+
 
 @media screen and (max-width: 768px) {
 
