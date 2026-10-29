@@ -3,15 +3,14 @@ body {
     margin: 0;
     background-color:lightred;
 }
-
-/* Header */
+
 h2 {
     color:blue;
     text-align: center;
     padding: 7px;
-}
+}
 
-/* Navigation Bar */
+
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +35,7 @@ h2 {
     background-color:green;
 }
 
-/* Content */
+
 .content {
     padding: 12px;
     text-align: center;
